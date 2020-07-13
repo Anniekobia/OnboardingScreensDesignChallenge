@@ -84,7 +84,6 @@
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
-<!--    TODO add start and top constraints-->
     <TextView
         android:id="@+id/txtSkipTwo"
         android:layout_width="wrap_content"
