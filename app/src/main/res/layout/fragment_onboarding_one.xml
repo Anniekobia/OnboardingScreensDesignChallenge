@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    tools:context=".OnboardingFragmentOne">
+
+    <RelativeLayout
+        android:id="@+id/centralLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/onboardingImageOne"
+            android:layout_width="@dimen/onboarding_image_size"
+            android:layout_height="@dimen/onboarding_image_size"
+            android:src="@drawable/hugo_one"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/onboardingTxtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="20sp"
+            android:text="@string/onboarding_screen_one_title"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/onboardingImageOne"/>
+
+        <TextView
+            android:id="@+id/onboardingTxtMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_marginHorizontal="40sp"
+            android:textAlignment="center"
+            android:text="@string/onboarding_screen_one_msg"
+            android:layout_below="@id/onboardingTxtTitle"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/screen_one_cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25sp"
+            android:onClick="goToNextScreen"
+            android:layout_below="@id/onboardingTxtMsg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40sp"
+            android:focusable="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6sp">
+                <TextView
+                    android:id="@+id/next_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next_txt"
+                    android:layout_marginStart="4sp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#202020"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">"
+                    android:background="@drawable/rounded_textview"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginStart="2sp"
+                    android:layout_marginEnd="4sp"
+                    android:layout_toEndOf="@id/next_txt"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtSkipOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_skip"
+        android:onClick="openGetStartedPage"
+        android:textColor="#808080"
+        android:layout_margin="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

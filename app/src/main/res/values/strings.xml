@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Meditation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onboarding_screen_one_title">Keep Calm</string>
+    <string name="onboarding_screen_one_msg">Feel less stressed and more mindful with meditation.</string>
+    <string name="onboarding_screen_two_title">Mindfulness</string>
+    <string name="onboarding_screen_two_msg">The mind is very powerful. To possess and take care of our mind is an utmost responsibility.</string>
+    <string name="onboarding_screen_three_title">Stay Focused</string>
+    <string name="onboarding_screen_three_msg">Lets maintain your focus by meditating every day without hassle.</string>
+    <string name="txt_skip"><u>Skip</u></string>
+    <string name="next_txt">Next</string>
+    <string name="get_started">Get Started</string>
+</resources>
